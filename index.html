@@ -4,10 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Addison OnlyFans</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://static2.onlyfans.com/static/prod/f/202506061345-bf5f05c732/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://static2.onlyfans.com/static/prod/f/202506061345-bf5f05c732/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://static2.onlyfans.com/static/prod/f/202506061345-bf5f05c732/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://static2.onlyfans.com/static/prod/f/202506061345-bf5f05c732/icons/favicon-16x16.png">
+    <link rel="mask-icon"
+        href="https://static2.onlyfans.com/static/prod/f/202506061345-bf5f05c732/icons/safari-pinned-tab.svg"
+        color="#00aff0">
+    <link rel="shortcut icon"
+        href="https://static2.onlyfans.com/static/prod/f/202506061345-bf5f05c732/icons/favicon.ico">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <style>
@@ -49,6 +64,62 @@
         .profile-pic {
             margin-top: -15%;
             border: 1px solid white;
+        }
+
+        .posts-and-media {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            width: 100%;
+            height: 400px;
+            background-image: url("download.png");
+            background-size: cover;
+            background-position: center;
+        }
+        .posts-and-media .center{
+          margin-top: auto;
+          
+
+        }
+        .posts-and-media .center svg{
+          margin-top: auto;
+          color: #8a96a3;
+
+        }
+        .posts-and-media .tab button {
+           
+            background-color: white;
+            width: 46%;
+            padding: 5px;
+             border-radius: 3px;
+        }
+
+        .posts-and-media .tab button:hover {
+            background-color: #0091ea0f;
+            color: #00aff0;
+
+        }
+
+        .posts-and-media .tab button.active {
+            border-bottom: 1px solid black;
+        }
+
+        .posts-and-media .tab {
+             margin-top: 10px;
+             padding:5px ;
+            
+            width: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .posts-and-media button.last {
+            margin-top: auto;
+            transform: translateY(-20px);
         }
     </style>
 </head>
@@ -232,7 +303,7 @@
             </div>
 
             <!-- Subscription Card -->
-              <div class="border  border-gray-200 " style="border-radius: 5px ;">
+            <div class="border  border-gray-200 " style="border-radius: 5px ;">
                 <div class=" rounded-xl p-4">
                     <h2 class="text-lg " style="color: #8a96a3;">Subscription</h2>
                     <p class="text-gray-600 text-sm mt-1">
@@ -273,16 +344,30 @@
             </div>
 
             <!-- Posts Placeholder -->
-            <div class="p-10 text-center">
-                <h3 class="font-bold text-lg">Subscribe to see user's posts</h3>
-                <p class="text-gray-500 mt-2">66 posts are hidden</p>
-                <button class="bg-[#00aff0] hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full mt-4">
-                    Subscribe
+
+            <div class="posts-and-media">
+                <div class="tab">
+                    <button>66 POSTS</button>
+                    <button>MEDIA</button>
+                </div>
+                <div class="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole">
+                        <circle cx="12" cy="16" r="1" />
+                        <rect x="3" y="10" width="18" height="12" rx="2" />
+                        <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+                    </svg>
+                </div>
+                <button class="last  w-full bg-[#00aff0] hover:bg-blue-600 text-white  p-[6px] px-4 rounded-full mt-4"
+                    style="font-size: 14px;">
+                    <b>
+                        SUBSCRIBE TO SEE USER POSTS
+                    </b>
                 </button>
+
             </div>
-            <br>
-            <br>
-            <br>
+
             <br>
             <br>
             <br>
@@ -330,9 +415,9 @@
                 </div>
 
             </div>
-            
-            
-            
+
+
+
 
 
         </div>
